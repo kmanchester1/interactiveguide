@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flowchart</title>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Your image description" class="header-image">
+        <h1>Student experience help and advice</h1>
+        <div class="flowchart">
+            <div class="box">
+                <a href="https://www.bradford.ac.uk/new-students/faqs/">The answers to many questions can be found on the New Student FAQs (click here to access).</a>    
+            </div>
+	<div class="box">
+                <a href="https://www.bradford.ac.uk/money/money-advice/">The University offers a money and pastoral advice service for students to access impartial information, advice and guidance from an experienced and professional team of Student Life Advisers (click here to access).</a>    
+            </div>
+        </div>
+<div class="buttons">
+    <div class="button-container">
+        <a href="index.html"><button type="button" class="button">Back to start</button></a>
+        <button id="backButton" class="back-button">Back to Previous Page</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("backButton").addEventListener("click", function(){
+        window.history.back();
+    });
+</script>

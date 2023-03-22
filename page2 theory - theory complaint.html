@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flowchart</title>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Your image description" class="header-image">
+              <h1>Theory module help and advice</h1>
+        <h2 class="center-text">I have a question or complaint about a specific module</h2>
+        <div class="flowchart">
+            <div class="box">
+                <a>In the first instance please contact the module leader to express your concerns.
+If you do not hear back from the module leader, or are unsatisfied with their response, then please contact the Stage Lead for your year.
+</a>         
+        </div>
+<div class="buttons">
+    <div class="button-container">
+        <a href="index.html"><button type="button" class="button">Back to start</button></a>
+        <button id="backButton" class="back-button">Back to Previous Page</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("backButton").addEventListener("click", function(){
+        window.history.back();
+    });
+</script>

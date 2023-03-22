@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flowchart</title>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Your image description" class="header-image">
+        <h1>Placements help and advice</h1>
+        <h2 class="center-text">Placement support agreements (PSAs).</h2>
+        <div class="flowchart">
+            <div class="box">
+                <a href="#">Please contact your personal academic tutor (PAT) who will be able to assist you with your PSA.</a>
+            </div>
+        </div>
+<div class="buttons">
+    <div class="button-container">
+        <a href="index.html"><button type="button" class="button">Back to start</button></a>
+        <button id="backButton" class="back-button">Back to Previous Page</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("backButton").addEventListener("click", function(){
+        window.history.back();
+    });
+</script>

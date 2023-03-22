@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flowchart</title>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Your image description" class="header-image">
+        <h1>Personal wellbeing help and advice</h1>
+        <div class="flowchart">
+            <div class="box">
+                <a href="#">Your personal academic tutor (PAT) will be able to offer you help and support for personal circumstances. If you need an extension then please contact your module leader.</a>  
+            </div>
+            <div class="box">
+                <a href="https://www.bradford.ac.uk/counselling/">As well as contacting your PAT, you may also wish to contact the University Counselling &amp; Mental Health Service (click here to access).</a>
+            </div>
+            <div class="box">
+                <div class="box-inner">
+                    <a href="https://www.bradford.ac.uk/disability/contact/">If you have a question or need help with a learner support profile (LSP) then please contact Disability Services (click here to access).</a>
+                    <div>You should make the module leader and your PAT aware that you have a learner support plan (LSP) in place.</div>
+                </div>
+            </div>
+        <div class="box">
+                <a href="#">I am unable to get in contact with my personal academic tutor (PAT).</a>  
+            </div>
+</div>
+<div class="buttons">
+    <div class="button-container">
+        <a href="index.html"><button type="button" class="button">Back to start</button></a>
+        <button id="backButton" class="back-button">Back to Previous Page</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("backButton").addEventListener("click", function(){
+        window.history.back();
+    });
+</script>
