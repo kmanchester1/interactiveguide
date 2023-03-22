@@ -138,6 +138,7 @@ a {
   padding: 10px 20px;
   cursor: pointer;
   font-size: 24px;
+  text-decoration: none;
 }
 
 /* Mobile styles */
@@ -150,6 +151,6 @@ a {
   .button,
   .back-button {
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
   }
 }
