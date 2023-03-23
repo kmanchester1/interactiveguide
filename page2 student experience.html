@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Flowchart</title>
+    <!-- Google Analytics tracking code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-730VZFGQ3L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-730VZFGQ3L');
+    </script>
 </head>
 <body>
     <div class="container">
@@ -12,16 +20,16 @@
         <h1>Student experience help and advice</h1>
         <div class="flowchart">
             <div class="box">
-                <a href="https://www.bradford.ac.uk/new-students/faqs/">The answers to many questions can be found on the New Student FAQs (click here to access).</a>    
+                <a href="https://www.bradford.ac.uk/new-students/faqs/" class="track-click" data-event-name="new_student_faqs">The answers to many questions can be found on the New Student FAQs (click here to access).</a>    
             </div>
-	<div class="box">
-                <a href="https://www.bradford.ac.uk/money/money-advice/">The University offers a money and pastoral advice service for students to access impartial information, advice and guidance from an experienced and professional team of Student Life Advisers (click here to access).</a>    
+            <div class="box">
+                <a href="https://www.bradford.ac.uk/money/money-advice/" class="track-click" data-event-name="money_advice">The University offers a money and pastoral advice service for students to access impartial information, advice and guidance from an experienced and professional team of Student Life Advisers (click here to access).</a>    
             </div>
         </div>
 <div class="buttons">
     <div class="button-container">
-        <a href="index.html"><button type="button" class="button">Back to start</button></a>
-        <button id="backButton" class="back-button">Back to previous page</button>
+        <a href="index.html"><button type="button" class="button track-click" data-event-name="back_to_start">Back to start</button></a>
+        <button id="backButton" class="back-button track-click" data-event-name="back_to_previous_page">Back to previous page</button>
     </div>
 </div>
 
@@ -29,4 +37,22 @@
     document.getElementById("backButton").addEventListener("click", function(){
         window.history.back();
     });
+
+    function trackEvent(eventName) {
+        gtag('event', eventName, {
+            'event_category': 'click',
+            'event_label': eventName,
+        });
+    }
+
+    // Add event listeners to the elements you want to track
+    document.querySelectorAll('.track-click').forEach(function(element) {
+        element.addEventListener('click', function() {
+            var eventName = this.getAttribute('data-event-name');
+            trackEvent(eventName);
+        });
+    });
+
 </script>
+</body>
+</html>
